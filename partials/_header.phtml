@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <title><?php echo $title; ?></title>
+    <meta name="description"
+          content=""/>
+    <meta name="keywords"
+          content=""/>
+
+<!--    CSS-->
+    <link rel="stylsheet" type="text/css" href="normalize.css"/>
+    <link rel="stylesheet" href="<?php echo CSS_URL;?>personnalFramwork.css" type="text/css"/>
+    <link rel="stylesheet" href="<?php echo CSS_URL;?>style.css" type="text/css"/>
+
+<!--    FontAwesome-->
+    <script src="https://kit.fontawesome.com/0006424b0a.js" crossorigin="anonymous"></script>
+
+
+    <!--    Gestion du tracking en fonction de la page affiché.-->
+    <?php if ($openingPage == 'paiement' OR $openingPage == 'paiementReussi' OR $openingPage == 'annulation' OR HOST == 'https://cheezpa.com') {
+        ?>
+        <meta name="robots" content="noindex,nofollow"/>
+        <?php
+    } else {
+        ?>
+        <meta name="robots" content="index,follow"/>
+        <?php
+    }
+    ?>
+
+    <link rel="icon" href="<?php echo IMAGES_URL; ?>favicon.ico"/>
+    <link rel="alternate" hreflang="fr" href="<?php echo HOST . '' . $openingPage; ?>"/>
+    <meta name="viewport" content="width=device-width"/>
+
+
+
+    <!-- Balisage JSON-LD généré par l'outil d'aide au balisage de données structurées de Google -->
+    <script type="application/ld+json">
+        [
+            {
+                "@context": "http://schema.org",
+                "@type": "LocalBusiness",
+                "name": "",
+                "image": "",
+                "telephone": "",
+                "email": "",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "",
+                    "addressLocality": "",
+                    "addressCountry": "",
+                    "postalCode": ""
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "opens": "Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30"
+                },
+                "url": ""
+            },
+            {
+                "@context": "http://schema.org",
+                "@type": "LocalBusiness",
+                "name": "",
+                "image": "",
+                "telephone": "",
+                "email": "",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "",
+                    "addressLocality": "",
+                    "addressCountry": "",
+                    "postalCode": ""
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "opens": "Veuillez insérer ici une date/heure valide au format ISO 8601. Exemples : 2015-07-27 ou 2015-07-27T15:30"
+                },
+                "url": ""
+            }
+        ]
+    </script>
+
+</head>
+
+<body>
+<header>
+    <div id="hamburger"><i class="fas fa-bars"></i></div>
+    <p><a href="<?php echo HOST;?>"></a></p>
+    <nav class="hiddenNav">
+        <ul class="">
+           <li class="inactive"><a href="<?php echo HOST; ?>xxx">xxxxxxx</a></li>
+            <li class="inactive"><a href="<?php echo HOST; ?>yyyy">yyyyyyy</a></li>
+            <li class="inactive"> <a href="<?php echo HOST; ?>zzzzz">zzzzzzz</a></li>
+
+            <li class="inactive"><a href="<?php echo HOST; ?>aaaaa">aaaaaaaa</a></li>
+            <li class="inactive"><a href="<?php echo HOST; ?>bbbbbbb">bbbbbbb</a></li>
+            <li class="inactive"><a href="<?php echo HOST; ?>cccccccc">cccccccc</a></li>
+        </ul>
+    </nav>
+    <script src="<?php echo JS_URL;?>header.js"></script>
+</header>

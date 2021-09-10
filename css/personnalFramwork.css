@@ -1,0 +1,62 @@
+
+
+/*-----------FLEX------------*/
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-noWrap{
+    flex-wrap: nowrap;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-evenly{
+    justify-content: space-evenly;
+}
+
+.flex-basis{
+    flex-basis: 100%;
+}
+
+.justify-normal{
+    justify-content: normal;
+}
+
+
+
+.flex-self-end{
+    align-self:end;
+}
+
+.marge{
+    margin: 15px;
+}
+
+.marge-top{
+    margin-top: 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+.error{
+    color: darkred;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
+
+
+.inline{
+    display: inline-block;
+}

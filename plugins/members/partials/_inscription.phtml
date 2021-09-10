@@ -1,0 +1,34 @@
+<?php
+?>
+
+
+<main id="register">
+    <h1>Inscription</h1>
+    <section class="centre">
+        <div class="error"><?php echo $error; ?></div>
+        <article>
+            <form action="newMember" method="post" class="flex flex-wrap flex-evenly">
+
+                <div class="flex flex-column">
+                    <label for="login">Login: <?php echo getErrors('login'); ?> </label>
+                    <input name="login" id="login" type="text" maxlength="15" required/>
+                    <label for="mail">E-mail : <?php echo getErrors('mail'); ?></label>
+                    <input name="mail" id="mail" type="email" maxlength="255" required/>
+                </div>
+
+                <div class="flex flex-column">
+                    <label for="password">Mot de passe: <?php echo getErrors('password'); ?> </label>
+                    <input name="password" id="password" type="password" required/>
+                    <label for="passwordVerification">Retaper votre mot de
+                        passe: <?php echo getErrors('passwordVerification'); ?></label>
+                    <input name="passwordVerification" id="passwordVerification" type="password" required/>
+                </div>
+
+                <div class="flex-basis marge-top">
+                    <input type="submit" class="button" value="s'enregistrer">
+                </div>
+            </form>
+        </article>
+    </section>
+</main>
+

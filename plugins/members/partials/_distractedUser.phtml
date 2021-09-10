@@ -1,0 +1,29 @@
+<?php
+?>
+
+<main id="distractedUser">
+    <h1>Nouveau mot de passe</h1>
+
+    <?php if($error !=''){ ?>
+    <p class="error"><?php echo $error; ?></p>
+    <?php
+    }
+    else{
+        ?>
+    <section>
+        <article>
+            <p>Bonjour <?php echo $distractMember->getLogin(); ?>. entre ton nouveau mot de passe : </p>
+            <form class="flex flex-column" action="updateAccount" method="post">
+                <label FOR="passwordNew">Nouveau mot de passe</label>
+                <input type="password" id="passwordNew"  name="passwordNew" placeholder="Nouveau mot de passe" required minlength="6">
+
+                <label FOR="passwordNewVerif">retappes le mot de passe</label>
+                <input type="password" id="passwordNewVerif"  name="passwordNewVerif" placeholder="retappez le même" required minlength="6">
+
+                <input type="submit" value="enregistrer">
+            </form>
+        </article>
+    </section>
+    <?php } ?>
+</main>
+
